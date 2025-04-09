@@ -1,0 +1,183 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px
+}
+.options{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.seachbox{
+    height: 30px;
+    margin-left: 10px;
+    border-radius: 12px;
+}
+.options ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 50px;
+    gap: 40px;
+    font-size: 20px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.options ul li{
+    color: rgb(0, 0, 0);
+}
+.cotton{
+    margin-left: 20px;
+    animation: rotate 2s infinite;
+}
+.login{
+    margin-right: 50px;
+    padding: 9px;
+    width: 100px;
+    border-radius: 23px;
+    font-size: 20px;
+}
+.options li:hover{
+    cursor: pointer;
+    color: rgb(245, 10, 10);
+    transform: translateY(-5px);
+    transition:  1s ease-in-out;
+}
+@keyframes rotate{
+    0%{
+        transform: rotateY(360deg);
+    }
+}
+h4{
+    font-size: 20px;
+}
+.buy{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.detail h4{
+    margin-top: 20px;
+}
+.shop{
+    margin-top: 40px;
+    width: 140px;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 8px;
+    background-color: orange;
+    border-color: transparent;
+}
+.infrom{
+    margin-top: 30px;
+}
+.ints{
+    margin-top: 20px;
+}
+.quanity{
+    height: 30px;
+    width: 70px;
+    margin-top: 10px;
+}
+select{
+    width: 200px;
+    height: 30px;
+}
+.foot{
+    margin-top: 60px;
+    margin-bottom: 10px;
+    display: flex;
+    gap: 100px;
+    justify-content: space-around;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    margin-right: 50px;
+    margin-left: 50px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.mail{
+    margin-top: 10px;
+    height: 20px;
+    background-color: transparent;
+    border-color: white;
+}
+.one{
+    margin-top: 10px;
+}
+ul{
+    list-style: none;
+}
+.foot a{
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+.more li{
+    margin: 40px;
+}
+.policy li{
+    margin: 40px;
+}
+.policy a{
+    color: white;
+    text-decoration: none;
+}
+.final{
+    margin-top: 50px;
+    font-weight: bold;
+}
+@media screen and (max-width: 500px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 10px;
+        align-items: center;
+    }
+
+
+
+    .buy {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .foot {
+        flex-direction: column;
+        gap: 20px;
+        margin: 20px;
+    }
+
+    .more li, .policy li {
+        margin: 10px 0;
+    }
+    .foot{
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 300px) {
+    .header {
+        margin-right: 0;
+        margin-top: 10px;
+        align-content: center;
+        text-align: center;
+    }
+    .login {
+        margin-right: 0;
+        margin-top: 10px;
+        margin-left: 150px;
+    }
+
+}
+
+
